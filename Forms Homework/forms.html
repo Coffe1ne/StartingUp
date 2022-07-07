@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Register!</h1>
+    </header>
+    <nav>
+        <!-- Vo ovoj sidebar mozebi ne beshe kazano da se iskoristi podnaslov, no po moja zelba go staviv i 
+        vo bullet/unordered lista staviv 4 page names -->
+        <h4>Several page names</h4>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Transport">Transport</a></li>
+            <li><a href="https://www.sciencedirect.com/journal/cities">Cities</a></li>
+            <li><a href="https://people.com/">People</a></li>
+            <li><a href="https://www.dictionary.com/browse/about">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Sekoj form element go staviv vo block element, iskoristiv block element div, i izmegju povekjeto od div staviv line break
+             poradi poubava preglednost na stranata. -->
+        <form>
+            <!-- Vo bitnite informacii iskoristiv atribut id, za da si bide sekoja specijalna po sebe i iskoristiv
+            placeholder za poubav izgled po svoj vkus -->
+            <div>
+                <label for="fName">Full Name:</label><br>
+                <input type="text" id="fName" name="fName" placeholder="Bob Bobinson">
+            </div>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="b.bobinson1@outlook.com">
+            </div>
+            <div>
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd" placeholder="P@s$W0rd.">
+            </div>
+            <br>
+            <!-- Vo age group iskoristiv input element type radio za so eden klik da kazesh vo koja grupacija pripagjash,
+            po svoj vkus napraviv da ima "br" samo posle prviot content / label i label pred sekoj input-->
+            <div>
+                <label for="ageGroup">In which group you belong to:</label><br>
+                <label>Below 18</label><input type="radio" name="ageGroup">
+                <label>18 to 64</label><input type="radio" name="ageGroup">
+                <label>Above 64</label><input type="radio" name="ageGroup">
+            </div>
+            <br>
+            <!-- Vo city group bidejkji ima pogolem izbor na gradovi izbrav input elemt type select -->
+            <div>
+                <label for="city">Residence:</label>
+                <select>
+                    <option>New York</option>
+                    <option>Los Angeles</option>
+                    <option>Phoenix</option>
+                    <option>Seattle</option>
+                    <option>Houston</option>
+                    <option>Dallas</option>
+                    <option>Las Vegas</option>
+                    <option>Chicago</option>
+                    <option>Jacksonville</option>
+                </select>
+            </div>
+            <br>
+            <!-- Vo transport bidejkji mozesh da izberesh povekje od eden transport iskoristiv input element type checkbox 
+            i staviv line break izmegju sekoj izbor-->
+            <div>
+                <label for="transport">What do you use for transport:</label><br>
+                <input type="checkbox" name="transport"><label>Bus</label><br>
+                <input type="checkbox" name="transport"><label>Car</label><br>
+                <input type="checkbox" name="transport"><label>Bike</label><br>
+                <input type="checkbox" name="transport"><label>Train</label><br>
+                <input type="checkbox" name="transport"><label>Bicycle</label>
+            </div>
+            <br>
+            <!-- Na kraj ima submit kopce za submit :) -->
+            <div>
+                <input type="submit" name="submitBtn">
+            </div>
+            <br>
+        </form>
+    </main>
+    <!-- footer staviv na kraj kako posebno delce kade e moeto ime e vo link koj nosi vo mojot github accout za repository -->
+    <footer><a href="https://github.com/Coffe1ne/StartingUp">Filip Mateski&copy;2022</footer>
+</body>
+
+</html>
