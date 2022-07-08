@@ -60,24 +60,24 @@
             po svoj vkus napraviv da ima "br" samo posle prviot content / label i label pred sekoj input-->
                             <div>
                                 <label for="ageGroup">In which group you belong to:</label><br>
-                                <label>Below 18</label><input type="radio" name="ageGroup">
-                                <label>18 to 64</label><input type="radio" name="ageGroup">
-                                <label>Above 64</label><input type="radio" name="ageGroup">
+                                <label>Below 18</label><input type="radio" name="ageGroup" value="teen">
+                                <label>18 to 64</label><input type="radio" name="ageGroup" value="adult">
+                                <label>Above 64</label><input type="radio" name="ageGroup" value="elder">
                             </div>
                             <br>
                             <!-- Vo city group bidejkji ima pogolem izbor na gradovi izbrav input elemt type select -->
                             <div>
                                 <label for="city">Residence:</label>
                                 <select>
-                                    <option>New York</option>
-                                    <option>Los Angeles</option>
-                                    <option>Phoenix</option>
-                                    <option>Seattle</option>
-                                    <option>Houston</option>
-                                    <option>Dallas</option>
-                                    <option>Las Vegas</option>
-                                    <option>Chicago</option>
-                                    <option>Jacksonville</option>
+                                    <option value="newYork">New York</option>
+                                    <option value="losAngeles">Los Angeles</option>
+                                    <option value="pheonix">Phoenix</option>
+                                    <option value="seattle">Seattle</option>
+                                    <option value="houston">Houston</option>
+                                    <option value="dallas">Dallas</option>
+                                    <option value="lasVegas">Las Vegas</option>
+                                    <option value="chicago">Chicago</option>
+                                    <option value="jacksonville">Jacksonville</option>
                                 </select>
                             </div>
                             <br>
@@ -85,11 +85,11 @@
             i staviv line break izmegju sekoj izbor-->
                             <div>
                                 <label for="transport">What do you use for transport:</label><br>
-                                <input type="checkbox" name="transport"><label>Bus</label><br>
-                                <input type="checkbox" name="transport"><label>Car</label><br>
-                                <input type="checkbox" name="transport"><label>Bike</label><br>
-                                <input type="checkbox" name="transport"><label>Train</label><br>
-                                <input type="checkbox" name="transport"><label>Bicycle</label>
+                                <input type="checkbox" name="transport" value="bus"><label>Bus</label><br>
+                                <input type="checkbox" name="transport" value="car"><label>Car</label><br>
+                                <input type="checkbox" name="transport" value="bike"><label>Bike</label><br>
+                                <input type="checkbox" name="transport" value="train"><label>Train</label><br>
+                                <input type="checkbox" name="transport" value="bicycle"><label>Bicycle</label>
                             </div>
                             <br>
                             <!-- Na kraj ima submit kopce za submit :) -->
