@@ -1,9 +1,11 @@
+/* Vo body staviv backrough color img, no repeat za da ne se povtara slikata, fixed da e i ja pozicionirav.
+Staviv font i staviv golemina vo body za cela strana da ja ima istata golemina na tekst */
 body {
     background: black url("http://www.clker.com/cliparts/K/C/r/p/W/o/grey-oak-tree-hi.png") no-repeat fixed left top ;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 16px;
 }
-
+/* Vo naslovot ima zadadeno golemina na tekst, pozicioniran, ima boja, dekoracija, margini i padinzi i debelina. */
 .title {
     font-size: 35px;
     text-align: center;
@@ -13,13 +15,13 @@ body {
     padding: 5px 10px;
     font-weight: 300;
 }
-
+/* Article za site paragrafi da imaat ista boja i indent, iako povekjeto klasi imaat svoi boi osven vtoriot 
+(go napraviv ova so boja za da pokazam deka go razbiram cascading orderot)*/
 article {
     color:rgb(233, 144, 0);
     text-indent: 100px;
-    
 }
-
+/* Sekoj od paragrafite imaat razlicen style. I sami prviot paragraf ima svoj text indent */
 .first {
     color: aliceblue;
     text-decoration: overline wavy #006eff 3.2px;
@@ -32,27 +34,25 @@ article {
 }
 
 .second {
-    font-size: 15px;
     font-weight: 700;
     letter-spacing: 3px;
     font-style: italic;
     text-transform: capitalize;
 }
-
+/* Vo tretiot paragraf ima obicen stil za razlika od drugite */
 .third {
-    font-size: 15px;
     font-weight: 100;
     word-spacing: 4px;
     color: rgb(249, 255, 183);
 }
-
+/* No, vo span inline element so pomosh na deklaracijata display block, go imam napraveno elementot i block za da mozam
+da go centriram vtoriot red na recenicata.*/
 .third.Par span {
     display: block;
     text-align: center;
 }
 
 .fourth {
-    font-size: 15px;
     font-weight: normal;
     color: rgb(255, 95, 95);
     text-transform: uppercase;
@@ -61,11 +61,12 @@ article {
     letter-spacing: 5px;
     font-size: 20px;
 }
-
+/* Iskoristen inline element za da mozam da stavam highligh so pomosh na background color. ( ne staviv block
+element bidejkji kje go oboi cel prostor kolku shto zavzema block elementot - od pocetok na strana do kraj*/
 .fourth span {
     background-color: rgb(100, 255, 255);
 }
-
+/* Vo footer ima text shadow i e centriran vo sredina, ima margina od 100px za da bide podole/ */
 footer {
     color: rgb(186, 255, 255);
     text-align: center;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Vo head staviv link za da se povrzi css file kako external CSS -->
 
 <head>
     <meta charset="UTF-8">
@@ -8,14 +9,19 @@
     <title>Autobiography</title>
     <link rel="stylesheet" href="/css-autobiography.css">
 </head>
+<!-- Vob body ima 3 child glavni elemnti, header kade e naslovot, main kade shto e biografijata i footer kade 
+shto e moeto ime -->
 
 <body>
-    <header>
-        <h1 class="title">Filip Mateski - Autobiography</h1>
+    <!-- Vo header imam zadadeno klasa poradi toa shto i vo body i vo klasava vo CSS imam razlicen font -->
+    <header class="title">
+        <h1>Filip Mateski - Autobiography</h1>
     </header>
-
+    <!-- Vo main ima child element article koj vo nego ima nekolku child element paragrafi -->
     <main>
         <article>
+            <!-- Vo sekoj od Paragrafite dole ima razlicni klasi vo koi shto za sekoja od niv
+            da mozam da ja stiliram razlicno vo css -->
             <p class="first Par">I was expected to drop-out,
                 I’ve held myself to a higher standard, lost respect from my family,I tell you sincerely that I’m serious
                 about changing my life,Once I’ve been criticized,Twice I’ve been shaped into the man I am now.
@@ -24,6 +30,8 @@
                 I bought things that further my passions,I love striving for greatness,I’ve been scared of failure,I’ve
                 seen said failure first hand,I’m not giving up.
             </p>
+            <!-- Vo ovoj paragraph imam iskoristeno inline element, kade shto zapocnuva vtoriot red na recenicata
+            za da mozam vo css da ja stavam vo centar -->
             <p class="third Par">
                 I learned this isn’t easy, I’ve heard it’s impossible,I’ve had set backs in my life,I once thought about
                 giving up.And only one person can truly hold me accountable, that’s me
@@ -32,13 +40,15 @@
                     I will testify that you can literally do anything as long as you believe whole heartedly that you
                     can.</span>
             </p>
+            <!-- Isto taka i vo ovoj paragraph ima inline span element za da mozam del od recenicata da ja stavam
+            kako highlight. Bidejkji inline elementite zimaat prostor do kade shto e contentot. -->
             <p class="fourth Par">
                 I have stories about times that I’ve had no hope,<span>I found hope in the midst of those
                     stories.</span>
             </p>
         </article>
     </main>
-
+    <!-- Vo footer e staveno moeto ime -->
     <footer>
         <p>Filip Mateski &copy; 2022</p>
     </footer>
