@@ -1,0 +1,75 @@
+body {
+    background: black url("http://www.clker.com/cliparts/K/C/r/p/W/o/grey-oak-tree-hi.png") no-repeat fixed left top ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+.title {
+    font-size: 35px;
+    text-align: center;
+    color: #006eff;
+    text-decoration: underline #006eff 2.2px;
+    margin: 15px;
+    padding: 5px 10px;
+    font-weight: 300;
+}
+
+article {
+    color:rgb(233, 144, 0);
+    text-indent: 100px;
+    
+}
+
+.first {
+    color: aliceblue;
+    text-decoration: overline wavy #006eff 3.2px;
+    font-style:oblique;
+    font-size: large;
+    margin-top: 60px;
+    padding: 5px;
+    text-indent: 20px;
+    letter-spacing: 0.8px;
+}
+
+.second {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.third {
+    font-size: 15px;
+    font-weight: 100;
+    word-spacing: 4px;
+    color: rgb(249, 255, 183);
+}
+
+.third.Par span {
+    display: block;
+    text-align: center;
+}
+
+.fourth {
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(255, 95, 95);
+    text-transform: uppercase;
+    text-decoration: underline wavy #006eff;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.fourth span {
+    background-color: rgb(100, 255, 255);
+}
+
+footer {
+    color: rgb(186, 255, 255);
+    text-align: center;
+    text-shadow: 3px 2px 6px rgb(255, 255, 255);
+    font-size: x-large;
+    margin: 100px;
+}
