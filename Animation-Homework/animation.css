@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+}
+/* Vo main-page parent klasata staviv kolku pixeli da e glavniot block so margina.  */
+.main-page {
+    margin: 50px;
+    width: 100vw;
+    height: 400px;
+}
+/* child blokovite imaat ista golemina, imaat borders i se namesteni da bidat side to side so float left */
+.blocks {
+    width: 15%;
+    height: 15%;
+    margin: 3%;
+    padding: 3%;
+    border: solid;
+    float: left;
+}
+/* Podole sekoja od blokovite imaat razlicna boja, overflow i dva imaat ista tranzicija */
+.navigation-block {
+    background-color: rgb(178, 88, 32);
+    overflow: hidden;
+    transition: width 1s;
+}
+
+.aside-block {
+    background-color: lightseagreen;
+    overflow: auto;
+    transition: transform 2s;
+}
+
+.article-block {
+    background-color: rgb(32, 178, 54);
+    overflow: visible;
+    transition: width 1s;
+}
+/* prviot i tretiot block bidejkji imaat ista tranzicija se odveini so , bidejkji kje imaat ist width */
+.navigation-block:hover, .article-block:hover {
+    width: 18%;
+}
+/* Aside blockot ima rotate */
+.aside-block:hover {
+    transform: rotate(90deg);
+}
+
+
+/* Vo navigation barot imam odredeno golemina boja, fixed pozicija, text align za da go centriram tekstot
+i z-index 1 isto kako i animation pagot za da koga kje napravam hover na navigation bar koj ima pomal z index
+da go snema navigation barot. */
+.navigation-bar {
+    width: 100vw;
+    height: 30px;
+    background-color: lightsteelblue;
+    position: fixed;
+    top:0;
+    text-align: center;
+    z-index: 1;
+}
+
+.navigation-bar:hover {
+    z-index: -1;
+}
+/* Na animation page imam zadadeno golemina koj isto taka se preklapa vo navigation barot bidejkji ima fixed pozicija
+navigation barot */
+.animation-page {
+    width: 100vw;
+    height: 400px;
+    z-index: 1;
+}
+/* Site blokovi imaat ista golemina i border, i gi napraviv kako inline block */
+.animation-block {
+    width: 20%;
+    height: 49%;
+    border: 2px solid;
+    display: inline-block;
+}
+/* sekoja od kockite imaat id so razlicna boja i animacija */
+#red {
+    background-color: red;
+    animation: rotateAnimation 3s;
+}
+
+#green {
+    background-color: green;
+    animation: bounce 1s infinite;
+}
+
+#blue {
+    background-color: blue;
+    animation: moveRight 1s ease-in-out forwards;
+}
+
+#orange {
+    background-color: orange;
+    animation: moveLeft 1s ease-in-out forwards;
+}
+/* keyframes 4 razzlicni vrsti na animacija */
+@keyframes rotateAnimation {
+    from { 
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* bounce animacijata od ista golemina se zgolemuva za malce i se vrakja vo ista golemina */
+@keyframes bounce {
+    0% { 
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/* od ista pozicija se pomrdnuva na desno za duplo i se zgolemuva za duplo */
+@keyframes moveRight {
+    0% { 
+        transform: translatex(0) scale(1);
+    }
+    100% {
+        transform: translatex(100%) scale(2);
+    }
+}
+/* od ista pozicija sevrakja duplo, vsushnost odi kon levo */
+@keyframes moveLeft {
+    0% { 
+        transform: translatex(0);
+    }
+    100% {
+        transform: translatex(-100%);
+    }
+}
