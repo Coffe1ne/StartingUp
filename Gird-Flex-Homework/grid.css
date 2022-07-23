@@ -13,7 +13,7 @@ body {
     background-color: rgb(142, 163, 183);
     text-align: center;
 }
-
+/* Zadaden Grid layout, shirina, margina za da se odvoi od fixed title, stavena template za kolku koloni i redici kje ima. */
 .container {
     display: grid;
     width: 100%;
@@ -25,7 +25,8 @@ body {
         'side main'
         'footer footer';
 }
-
+/* sidebar so svoj grid layout, i zadaden template od edna colona koja se povtoruva 4 pati so ista visina, items pozicionirani
+vo sredina, zadadena shirina i visina i fixed position */
 .sidebar-container {
     grid-area: side;
 
@@ -58,7 +59,7 @@ body {
     width: 30px;
     height: 30px;
 }
-
+/* main content so svoj grid layout koj ima edna kolona koja se povtoruva 3 pati vo redici so auto odredena visina */
 .main-content-container {
     grid-area: main;
 
@@ -68,14 +69,14 @@ body {
 
     background-color: rgb(246, 246, 246);
 }
-
+/* sekoj block vo main gridot ima max content za da si odredi sam kolkav bi bil contentot */
 .posts-content {
     height: max-content;
     margin: 30px 50px;
 
     border: 1px solid black;
 }
-
+/* profile blockovite imaat svoj grid layout so 2 koloni i edna redica za da gi odvoi profile slikicnata i profile info */
 .profile {
     margin: 30px;
 
@@ -96,7 +97,7 @@ body {
     height: 600px;
     width: 100%;
 }
-
+/* footer so fixed pozicija */
 .footer {
     grid-area: footer;
 
