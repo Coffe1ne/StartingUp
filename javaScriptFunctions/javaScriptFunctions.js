@@ -15,8 +15,8 @@ console.log(equalityBetween(number1,number2,number3));
 
 // Ne mi funkcioniraat prvite dva uslovi kako shto treba. direktno ide na else i ne znam zashto.
 function theMonth (randomMonth){
-    let daysWith31 = [1, 3, 5, 7, 8, 10, 12];
-    let daysWith30 = [4, 6, 9, 11];
+    let daysWith31 = ["1", "3", "5", "7", "8", "10", "12"];
+    let daysWith30 = ["4", "6", "9", "11"];
     randomMonth = prompt("Enter number of Month")
     if (daysWith31.includes(randomMonth)){
         return "Has 31"
