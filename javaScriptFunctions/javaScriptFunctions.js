@@ -13,7 +13,7 @@ let number3 = "4"
 // console.log ja koristam funkcijata na kreiranite variabli
 console.log(equalityBetween(number1,number2,number3));
 
-// Ne mi funkcioniraat prvite dva uslovi kako shto treba. direktno ide na else i ne znam zashto.
+// Gi staviv brojkite vo nizite kako stringovi za da moze da funkcionira prompt.
 function theMonth (randomMonth){
     let daysWith31 = ["1", "3", "5", "7", "8", "10", "12"];
     let daysWith30 = ["4", "6", "9", "11"];
