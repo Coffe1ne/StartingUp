@@ -10,7 +10,7 @@ function remove (a, b) {
 
 console.log(remove(arr, delNum));
 
-// 2. Copy paste od net :)
+// 2.
 let digits = 12345123123;
 function countDigits(num) {
     let count = 0;
