@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Api</title>
+    <style>
+        .error {
+            color: #D8000C;
+            background-color: #FFBABA;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="signUpForm" onsubmit="errorForm()">
+        <input type="email" placeholder="Your Mail" name="email" />
+        <p class="error email-error"></p>
+        <input type="password" placeholder="Your Password" name="password" />
+        <p class="error password-error"></p>
+        <input type="number" placeholder="Your Age" name="age" />
+        <p class="error age-error"></p>
+        <input type="text" placeholder="Your Profile Name:" name="profile" />
+        <p class="error profile-error"></p>
+        <select>
+            <option value="newYork">New York</option>
+            <option value="losAngeles">Los Angeles</option>
+            <option value="pheonix">Phoenix</option>
+        </select>
+        <input type="submit" />
+    </form>
+    <script src="/webApiHomeWork/webApi.js"></script>
+</body>
+
+
+</html>

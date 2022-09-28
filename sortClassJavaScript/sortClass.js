@@ -30,3 +30,44 @@ let arrayByID = library.find(a => {
 console.log(arrayByID);
 
 // Zadaca 2:
+class Car {
+    constructor(brand, year, hp){
+        this.brand = brand;
+        this.year = year;
+        this.hp = hp;
+    }
+    age(x) {
+        return x - this.year;
+    }
+    userPermission(){
+        for(let i = 0; i < this.year.length; i++) {
+            if(this.year[i] > 25) {
+                return (this.brand[i] + " can drive any car");
+            } else {
+                return (this.brand[i] + " limited to 105hp");
+            }
+        }
+    }
+}
+let date = new Date();
+let year = date.getFullYear();
+
+let myCar = new Car("BMW", 2015, 380);
+console.log(myCar.age(year));
+
+let users = [
+    { fullName:"Bill Gates", age:"75"},
+    { fullName:"Steve Jobs", age:"40"},
+    { fullName:"Suzanne Collins", age:"17"},
+];
+
+let userName = users.map(function(name){
+    return name.fullName;
+})
+
+let userAge = users.map(function(age){
+    return age.age
+})
+
+let permission = new Car(userName, userAge);
+console.log(permission.userPermission(users));
