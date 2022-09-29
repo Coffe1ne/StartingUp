@@ -7,20 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .error {
+        color: rgb(255, 110, 134);
+    }
+</style>
 
 <body>
     <form id="form" onsubmit="submitInput()">
-        <label>First Name:</label><br><input id="fName" type="text" onblur="blur()">
-        <div class="errorfName"></div>
-        <label>Last Name:</label><br><input id="lName" type="text" onblur="blur()">
-        <p id="errorLName"></p>
-        <label>Email:</label><br><input id="mail" type="email" onblur="blur()">
-        <p id="errorMail"></p>
-        <label>Age</label><br><input id="age" type="number" onblur="blur()">
-        <p id="errorAge"></p>
-        <label>Address</label><br><input id="address" type="text" onblur="blur()">
-        <p id="errorAddress"></p>
+        <label>First Name:</label><br>
+        <input type="text" class="fName" id="fName" onblur="myF()" onkeypress="key()">
+        <button type="reset" id="reset">Reset</button>
+        <div id="errorfName" class="error"></div>
+        <label>Last Name:</label><br>
+        <input type="text" class="lName" id="lName" onblur="myF()" onkeypress="key()">
+        <div id="errorLName" class="error"></div>
+        <label>Email:</label><br>
+        <input type="text" class="mail" id="mail" onblur="myF()" onkeypress="key()">
+        <div id="errorMail" class="error"></div>
+        <label>Age</label><br>
+        <input type="text" class="age" id="age" onblur="myF()" onkeypress="key()">
+        <div id="errorAge" class="error"></div>
+        <label>Address</label><br>
+        <input type="text" class="address" id="address" onblur="myF()" onkeypress="key()">
+        <div id="errorAddress" class="error"></div>
         <button type="submit">Submit</button>
+
     </form>
 </body>
 
